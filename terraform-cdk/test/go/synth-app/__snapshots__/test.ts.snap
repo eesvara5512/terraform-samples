@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Go full integration test synth synth generates JSON 1`] = `
+"{
+  \\"//\\": {
+    \\"metadata\\": {
+      \\"version\\": \\"stubbed\\",
+      \\"stackName\\": \\"go-simple\\",
+      \\"backend\\": \\"local\\"
+    }
+  },
+  \\"terraform\\": {
+    \\"required_providers\\": {
+      \\"random\\": {
+        \\"version\\": \\"~> 3.1.0\\",
+        \\"source\\": \\"hashicorp/random\\"
+      }
+    }
+  },
+  \\"provider\\": {
+    \\"random\\": [
+      {}
+    ]
+  },
+  \\"resource\\": {
+    \\"random_pet\\": {
+      \\"pet\\": {
+        \\"prefix\\": \\"my\\",
+        \\"//\\": {
+          \\"metadata\\": {
+            \\"path\\": \\"go-simple/pet\\",
+            \\"uniqueId\\": \\"pet\\"
+          }
+        }
+      }
+    }
+  }
+}"
+`;
